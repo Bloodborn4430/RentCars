@@ -1,0 +1,177 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Rent";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+       
+        body {
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<section id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a href="#hero">
+                    <h1><span>M</span>axx <span>S</span>peed</h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="/" data-after="Home">Home</a></li>
+                    <li><a asp-page="/Service" data-after="Rent">Rent</a></li>
+                    <li><a href="#projects" data-after="Projects">Projects</a></li>
+                    <li><a href="#about" data-after="About">About</a></li>
+                    <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    <partial name="_LoginPartial" />
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero Section  -->
+<!-- Cars Section -->
+<section id="car-catalog">
+    <div class="car-catalog container">
+        <div class="car-catalog container">
+            <div class="catalog-header centered-text">
+                <h1 class="section-title">Wybierz <span>Klasa Samochodu</span></h1>
+                <p>Oferujemy szeroką gamę samochodów do wynajęcia, dostosowanych do Twoich potrzeb.</p>
+            </div>
+            <div class="all-cars">
+                <!-- Ваши карточки автомобилей здесь -->
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="car-catalog">
+    <div class="container">
+        <!-- Text Block -->
+        <div class="centered-text">
+            <h1>Choose Your Car Class</h1>
+            <p>We offer a wide range of rental cars, tailored to your needs.</p>
+        </div>
+
+        <!-- Car Image Gallery -->
+        <div class="car-gallery">
+            <!-- Economy Class -->
+            <div class="car-item">
+                <img src="Images/Corolla.jpg" alt="Klasa ekonomiczna">
+                <p>Klasa ekonomiczna: Toyota Yaris, Ford Fiesta, Opel Corsa (od 80 zł/dzień).</p>
+                <!-- Кнопка для перехода на страницу покупки -->
+                <div class="bg-btn">
+                    <a href="/Econom" class="signup-btn">Get Now</a>                    <!-- Указываем путь к странице покупки -->
+                </div>
+            </div>
+
+            <!-- Standard Class -->
+            <div class="car-item">
+                <img src="Images/Toyota.jpg" alt="Klasa standardowa">
+                <p>Klasa standardowa: Volkswagen Golf, Toyota Corolla, Honda Civic (od 120 zł/dzień).</p>
+                <!-- Кнопка для перехода на страницу покупки -->
+                <div class="bg-btn">
+                    <a href="/Standart" class="signup-btn">Get Now</a> <!-- Указываем путь к странице покупки -->
+                </div>
+            </div>
+
+            <!-- Business Class -->
+            <div class="car-item">
+                <img src="Images/BMW.jpg" alt="Klasa biznesowa">
+                <p>Klasa biznesowa: BMW 3 Series, Audi A4, Mercedes-Benz C-Class (od 250 zł/dzień).</p>
+                <!-- Кнопка для перехода на страницу покупки -->
+                <div class="bg-btn">
+                    <a href="/Buisness" class="signup-btn">Get Now</a> <!-- Указываем путь к странице покупки -->
+                </div>
+            </div>
+
+            <!-- Premium Class -->
+            <div class="car-item">
+                <img src="Images/Mercedes-Benz.jpg" alt="Klasa premium">
+                <p>Klasa premium: Mercedes-Benz S-Class, BMW 7 Series, Audi A8 (od 400 zł/dzień).</p>
+                <!-- Кнопка для перехода на страницу покупки -->
+                <div class="bg-btn">
+                    <a href="/Premium" class="signup-btn">Get Now</a> <!-- Указываем путь к странице покупки -->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- End Projects Section -->
+<!-- ------- -->
+
+<!-- Pricing End -->
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                <div class="contact-info">
+                    <h1>Telefon</h1>
+                    <h2>+1 234 123 1234</h2>
+                    <h2>+1 234 123 1234</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>info@gmail.com</h2>
+                    <h2>abcd@gmail.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                <div class="contact-info">
+                    <h1>Adres</h1>
+                    <h2>Polska, Poznań, Poznań główny.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+<!-- Footer -->
+<section id="footer">
+    <div class="footer container">
+        <div class="brand">
+            <h1><span>M</span>axx <span>S</span>peed</h1>
+        </div>
+        <h2>Nasze Sieci Społecznościowe</h2>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="#"><img src="/Images/insta.png" /></a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="/Images/pin.png" /></a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="/Images/twitter.png" /></a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="/Images/telegram-256x256.png" /></a>
+            </div>
+        </div>
+        <p>Copyright © 2025 Maksym. All rights reserved</p>
+    </div>
+</section>

@@ -1,0 +1,251 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Maxx Speed";
+}
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1><span>M</span>axx <span>S</span>peed</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a asp-page="/Service" data-after="Rent">Rent</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="/account" data-after="Account">Account</a></li>
+                        <partial name="_LoginPartial" />
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>We are <span></span></h1>
+                <h1>Maxx Speed <span></span></h1>
+                <a href="#projects" type="button" class="cta">Samochody</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section  -->
+    <!-- Service Section -->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Serv<span>i</span>ces</h1>
+                <p>
+                    Świadczymy usługi wynajmu samochodów na każdy gust i budżet. Niezależnie od tego, 
+                    czy szukasz ekonomicznej opcji na krótki wyjazd, czy luksusowego samochodu na ważne wydarzenie, 
+                    mamy coś do zaoferowania. Nasze samochody są zawsze w doskonałym stanie 
+                    i gotowe do użycia w każdej chwili!
+                </p>
+            </div>
+            <div class="service-bottom">
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <h2>Klasa ekonomiczna</h2>
+                    <p>
+                        Oferujemy niedrogie samochody do codziennego podróżowania. Jeśli szukasz czegoś prostego, 
+                        ekonomicznego i wygodnego, nasza Klasa Ekonomiczna będzie dla Ciebie idealnym wyborem. 
+                        Te samochody oferują najlepszy stosunek jakości do ceny na Twoją podróż.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <h2>Klasa standardowa</h2>
+                    <p>
+                        Idealny wybór dla osób poszukujących komfortu i jakości za rozsądną cenę. 
+                        Klasa Standard zapewni Ci komfort i niezawodność w podróży, niezależnie od tego, 
+                        czy podróżujesz w celach służbowych, czy wybierasz się na wycieczkę z rodziną.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <h2>Klasa biznesowa</h2>
+                    <p>
+                        Na poważniejsze imprezy i 
+                        wyjazdy służbowe oferujemy samochody klasy biznes. 
+                        Te samochody zapewnią Ci maksymalny komfort, styl i elegancję, 
+                        dzięki czemu zawsze zrobisz wrażenie.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <h2>Klasa Premium</h2>
+                    <p>
+                        Dla osób ceniących luksus oferujemy wynajem 
+                        samochodów klasy premium. Zapewniamy samochód, 
+                        który podkreśli Twój status i zagwarantuje niezrównany komfort i styl podczas całej podróży.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+    <!-- Cars Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Pierwszy </h1>
+                        <h2>Dlaczego warto nas wybrać?</h2>
+                        <p>
+                            Nasze pojazdy są zawsze w doskonałym stanie i gotowe do pracy. Dbamy o to, 
+                            aby każdy pojazd został dokładnie sprawdzony,
+                            aby zagwarantować Państwu komfort i bezpieczeństwo. 
+                            Rozumiemy, jak ważna na drodze jest niezawodność, 
+                            dlatego nasze samochody są najlepszym wyborem na każdą podróż.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                    <img src="Images/img-1.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Drugi</h1>
+                        <h2>Wygoda i dostępność</h2>
+                        <p>
+                            Wygoda i dostępność
+                            Oferujemy wynajem samochodów na dowolny okres - od kilku godzin do kilku miesięcy.
+                            Nasze elastyczne warunki wynajmu pozwalają Ci wybrać opcje
+                            najwygodniejsze dla Ciebie. Niezależnie od tego,
+                            czy chcesz wynająć samochód na weekend czy na dłuższy okres,
+                            zawsze jesteśmy gotowi zaproponować Ci najlepsze rozwiązanie.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                        <img src="Images/img-2.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Trzeci</h1>
+                        <h2>Wsparcie 24/7</h2>
+                        <p>
+                            W razie jakichkolwiek problemów na drodze lub pytań dotyczących pojazdu, nasz zespół wsparcia jest
+                            do Państwa dyspozycji 24 godziny na dobę,
+                            7 dni w tygodniu. Rozumiemy, jak ważny jest komfort podczas podróży,
+                            dlatego jesteśmy zawsze gotowi szybko zareagować na wszelkie prośby.
+                    </div>
+                    <div class="project-img">
+                        <img src="/Images/img-3.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Czwarty</h1>
+                        <h2>Szeroki wybór samochodów</h2>
+                        <p>
+                            Oferujemy szeroką gamę modeli, od ekonomicznych po premium.
+                            Dysponujemy samochodem na każdą okazję - czy to wyjazd służbowy,
+                            wyjazd rodzinny czy ważne wydarzenie. Nasze maszyny to idealny kompromis pomiędzy jakością i ceną,
+                            a Ty możesz wybrać opcję odpowiadającą Twoim potrzebom.
+                        </p>
+                    </div>
+                    <div class="project-img">
+                    <img src="Images/img-4.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="Images/img-5.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">O <span>nas</span></h1>
+                <h2>Firma wynajmująca samochody</h2>
+                <p>
+                    Oferujemy szeroką gamę samochodów do wynajęcia, od modeli ekonomicznych do premium, aby sprostać potrzebom wszystkich naszych klientów.
+                    Nasza firma gwarantuje wysoki poziom usług, bezpieczeństwo i komfort na drodze, oferując niezawodne samochody, 
+                    sprawdzane przed każdym wynajmem. Oferujemy elastyczne warunki wynajmu i całodobową pomoc techniczną, 
+                    aby każda podróż była jak najwygodniejsza i bezproblemowa.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                    <div class="contact-info">
+                        <h1>Telefon</h1>
+                        <h2>+1 234 123 1234</h2>
+                        <h2>+1 234 123 1234</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>info@gmail.com</h2>
+                        <h2>abcd@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                    <div class="contact-info">
+                        <h1>Adres</h1>
+                        <h2>Polska, Poznań, Poznań główny.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>M</span>axx <span>S</span>peed</h1>
+            </div>
+            <h2>Nasze Sieci Społecznościowe</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                <a href="#"><img src="/Images/insta.png" /></a>
+                </div>
+                <div class="social-item">
+                <a href="#"><img src="/Images/pin.png" /></a>
+                </div>
+                <div class="social-item">
+                <a href="#"><img src="/Images/twitter.png" /></a>
+                </div>
+                <div class="social-item">
+                <a href="#"><img src="/Images/telegram-256x256.png" /></a>
+                </div>
+            </div>
+            <p>Copyright © 2025 Maksym. All rights reserved</p>
+        </div>
+    </section>
+

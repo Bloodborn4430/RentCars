@@ -1,0 +1,146 @@
+﻿@page
+@model WebApplication1.Pages.BuisnessModel
+@{
+    ViewData["Title"] = "Business Class Cars";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .car-list {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .car-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+            .car-item img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .car-item h2 {
+                font-size: 1.5rem;
+                color: #333;
+            }
+
+            .car-item p {
+                font-size: 1rem;
+                color: #666;
+                margin: 10px 0;
+            }
+
+            .car-item a {
+                display: inline-block;
+                margin-top: 15px;
+                background: #007bff;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+                .car-item a:hover {
+                    background: #0056b3;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Text Block -->
+        <div class="content">
+            <div class="centered-text">
+                <h1>Klasa Biznesowa</h1>
+                <p>
+                    Zapoznaj się z naszą ofertą samochodów klasy biznesowej, idealnych dla wymagających podróżnych. Luksus, komfort i styl w każdej podróży!
+                </p>
+            </div>
+        </div>
+
+        <!-- Car List -->
+        <section class="car-list">
+            <!-- Car 1 -->
+            <div class="car-item">
+                <img src="Images/BMW-3-Series.jpg" alt="BMW 3 Series">
+                <h2>BMW 3 Series</h2>
+                <p class="description">Elegancja i komfort w jednym, idealny na długie podróże. Cena od 250 zł/dzień.</p>
+                <ul class="car-details">
+                    <li><strong>Rok produkcji:</strong> 2021</li>
+                    <li><strong>Kolor:</strong> Czarny</li>
+                    <li><strong>Skrzynia biegów:</strong> Automatyczna</li>
+                    <li><strong>Paliwo:</strong> Benzyna</li>
+                    <li><strong>Zużycie paliwa:</strong> 7,5 l/100 km</li>
+                </ul>
+                <a href="/rent?car=BMW3Series">Choose This Car</a>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car-item">
+                <img src="Images/Audi-A4.jpg" alt="Audi A4">
+                <h2>Audi A4</h2>
+                <p class="description">Luksusowy i przestronny, z doskonałymi właściwościami jezdnymi. Cena od 250 zł/dzień.</p>
+                <ul class="car-details">
+                    <li><strong>Rok produkcji:</strong> 2020</li>
+                    <li><strong>Kolor:</strong> Srebrny</li>
+                    <li><strong>Skrzynia biegów:</strong> Automatyczna</li>
+                    <li><strong>Paliwo:</strong> Diesel</li>
+                    <li><strong>Zużycie paliwa:</strong> 5,9 l/100 km</li>
+                </ul>
+                <a href="/rent?car=AudiA4">Choose This Car</a>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-item">
+                <img src="Images/Mercedes-C-Class.jpg" alt="Mercedes-Benz C-Class">
+                <h2>Mercedes-Benz C-Class</h2>
+                <p class="description">Poczuj pełnię luksusu i nowoczesne technologie. Cena od 250 zł/dzień.</p>
+                <ul class="car-details">
+                    <li><strong>Rok produkcji:</strong> 2022</li>
+                    <li><strong>Kolor:</strong> Biały</li>
+                    <li><strong>Skrzynia biegów:</strong> Automatyczna</li>
+                    <li><strong>Paliwo:</strong> Hybryda</li>
+                    <li><strong>Zużycie paliwa:</strong> 5,2 l/100 km</li>
+                </ul>
+                <a href="/rent?car=MercedesCClass">Choose This Car</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+}

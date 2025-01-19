@@ -1,0 +1,148 @@
+﻿@page
+@model WebApplication1.Pages.EconomModel
+@{
+    ViewData["Title"] = "Economy Cars";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: row; /* Чтобы текст и машины располагались в строку */
+            align-items: flex-start;
+            gap: 30px; /* Добавление отступов между элементами */
+        }
+
+        .content {
+            flex: 1; /* Текст будет занимать 1/3 доступного пространства */
+            max-width: 500px; /* Ограничим ширину текста */
+        }
+
+        .car-list {
+            flex: 2; /* Список машин будет занимать большую часть контейнера */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .car-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+            .car-item img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .car-item h2 {
+                font-size: 1.5rem;
+                color: #333;
+            }
+
+            .car-item p {
+                font-size: 1rem;
+                color: #666;
+                margin: 10px 0;
+            }
+
+            .car-item a {
+                display: inline-block;
+                margin-top: 15px;
+                background: #007bff;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+                .car-item a:hover {
+                    background: #0056b3;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Text Block -->
+        <div class="content">
+            <div class="centered-text">
+                <h1>Economy Class Cars</h1>
+                <p>
+                    Zapoznaj się z naszą ofertą samochodów ekonomicznych, idealnych dla oszczędnych podróżnych, którzy cenią sobie wydajność i niezawodność.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Car List -->
+        <section class="car-list">
+            <!-- Car 1 -->
+            <div class="car-item">
+                <img src="Images/Toyota-Yaris.jpg" alt="Toyota Yaris">
+                <h2>Toyota Yaris</h2>
+                <p class="description">Kompaktowy, oszczędny i idealny do jazdy po mieście. Cena od 80 zł/dzień.</p>
+                <ul class="car-details">
+                    <li><strong>Rok produkcji:</strong> 2021</li>
+                    <li><strong>Kolor:</strong> Srebrny</li>
+                    <li><strong>Skrzynia biegów:</strong> Automatyczna</li>
+                    <li><strong>Paliwo:</strong> Benzyna</li>
+                    <li><strong>Zużycie paliwa:</strong> 5 l/100 km</li>
+                </ul>
+
+                <a href="/rent?car=ToyotaYaris">Choose This Car</a>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car-item">
+                <img src="Images/Ford-Fiesta.jpg" alt="Ford Fiesta">
+                <h2>Ford Fiesta</h2>
+                <p>Niezawodny i stylowy, idealny na krótkie i długie podróże. Cena od 85 zł/dzień.</p>
+                <ul class="car-details">
+                    <li><strong>Rok produkcji:</strong> 2020</li>
+                    <li><strong>Kolor:</strong> Czerwony</li>
+                    <li><strong>Skrzynia biegów:</strong> Manualna</li>
+                    <li><strong>Paliwo:</strong> Diesel</li>
+                    <li><strong>Zużycie paliwa:</strong> 4,8 l/100 km</li>
+                </ul>
+                <a href="/rent?car=FordFiesta">Choose This Car</a>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-item">
+                <img src="Images/Opel-Corsa.jpg" alt="Opel Corsa">
+                <h2>Opel Corsa</h2>
+                <p>Nowoczesny design z dużą oszczędnością paliwa. Cena od 80 zł/dzień.</p>
+                <ul class="car-details">
+                    <li><strong>Rok produkcji:</strong> 2022</li>
+                    <li><strong>Kolor:</strong> Niebieski</li>
+                    <li><strong>Skrzynia biegów:</strong> Automatyczna</li>
+                    <li><strong>Paliwo:</strong> Hybryda</li>
+                    <li><strong>Zużycie paliwa:</strong> 3,9 l/100 km</li>
+                </ul>
+                <a href="/rent?car=OpelCorsa">Choose This Car</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
